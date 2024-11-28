@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Coffee Co. Contact</title>
+</head>
+<style>
+     * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+    body{
+        background-color: #3b141c;
+    }
+
+    p{
+        color: white;
+        text-align: center;
+    }
+
+    h1{
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-left: 50px;
+    margin-top: -130px;
+        position: relative;
+    }
+
+    .m1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  margin-top: 150px;
+  color: white;
+  margin-right: 50px;
+}
+.p3{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact section styling */
+.contact-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 550px;
+}
+.contact-section {
+  display: flex;
+  gap: 20px;
+  margin-top: -100px;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-m);
+}
+
+.contact-section .contact-form .form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  outline: none;
+  margin-bottom: 16px;
+  font-size: var(--font-size-s);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--medium-gray-color);
+  justify-content: center;
+}
+.contact-section .contact-form {
+  max-width: 50%;
+}
+.contact-section .contact-form textarea.form-input {
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+.contact-section .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+.contact-section .contact-form .submit-button {
+  padding: 10px 28px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-m);
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  transition: 0.3s ease;
+}
+.contact-section .contact-form .submit-button:hover {
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.section-title{
+  color: black;
+  text-align: center;
+}
+
+.contact-form{
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.social-link:hover {
+  color: #f3961c;
+}
+.container {
+  background-color: #f6ecd7;
+  height: 150px;
+  width: 100%;
+  max-width: 1536px;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Add padding to the container */
+}
+
+.back-link {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  color: black; /* Set the link color to white */
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); 
+}
+</style>
+<body>
+    <div class="container"> </div>
+    <a href="index.html" class="back-link">
+        <i class="arrow left"></i> Back
+      </a>    
+    <h1>Media Contacts</h1>
+    <br>
+    <br>
+    <p class="p3"> 
+        Partnership and Sponsorship Requests: <br>
+        <br>
+    </p>
+    <section class="contact-section" id="contact"> 
+    <div class="section-content"> 
+    <form action="#" class="contact-form">
+        <input type="text" placeholder="Your name" class="form-input" required />
+        <input type="email" placeholder="Your email" class="form-input" required />
+        <textarea placeholder="Your message" class="form-input" required></textarea>
+        <button type="submit" class="button submit-button">Submit</button>
+      </form>
+    </div>
+</section>
+
+    <h1 class="m1">Social Media</h1>
+    <br>
+
+    <br>
+    <p>
+        You can follow us at: <br>
+        <br>
+    </p>
+
+    <div class="social-link-list">
+        <a href="http://facebook.com" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="http://instagram.com" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://twitter.com" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+   
+</body>
+</html>

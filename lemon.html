@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Lychee</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    :root {
+  /* Colors */
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+  /* Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+  
+    body {
+      background-color: #3b141c;
+      color: white;
+    } 
+  
+    .container2 {
+    background-color: #f6ecd7;
+    height: 280px;
+    width: 100%;
+    max-width: 1536px;
+    position: relative;
+    top: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse; /* Reverse the order of items */
+  }
+
+  .img {
+    width: 329px;
+    height: 280px;
+    margin-left: 260px;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-family: 'Georgia', serif;
+    
+    margin-right: 510px;
+    font-size: 50px;
+    color: black;
+  }
+
+  .product-info-container {
+    display: flex;
+    
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+.ingredients, .nutrition {
+    width: 48%;
+    padding: 20px;
+    top: 50px; /* For example, move it down 300 pixels */
+    position: relative;
+    
+  }
+
+  .ingredients {
+    margin-right: 200px; /* Adjust this value to move the ingredients section to the left */
+  }
+
+  h2 {
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #f4c555; /* Add a 2px thick border with the specified color */
+  }
+
+  .h2-size{
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #f4c555; /* Add a 2px thick border with the specified color */
+    margin-left: 190px;
+  }
+
+  .ingredients-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+    margin-bottom: 1em;
+  }
+
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .nutrition-table th, .nutrition-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: white;
+  }
+
+  .nutrition-note {
+    font-size: 0.9em;
+    color: white;
+    margin-top: 1em;
+  }
+
+  /* Size Options Section */
+  .size-options {
+    background-color: #f6ecd7;
+  }
+
+  .size-options {
+    display: flex;
+    margin-top: 100px;
+    background-color: #3B141C; /* Set background color */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.size-icon {
+    width: 40px; /* Reduce icon size */
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.small{
+  width: 40px; /* Reduce icon size */
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 185px;
+    margin-top: 4px;
+}
+
+.med{
+  width: 40px; /* Reduce icon size */
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 55px;
+    margin-left: -88px;
+}
+
+.large{
+  width: 40px; /* Reduce icon size */
+    height: 50px;
+    margin-top: 55px;
+    margin-left: -35px;
+}
+
+.psmall{
+margin-left: 186px;
+margin-top: -20px;
+font-size: 15px;
+}
+
+.pmed{
+  font-size: 15px;
+  margin-top: 6.5px;
+  margin-left: -140px;
+  text-align: center;
+}
+
+.plarge {
+  font-size: 15px;
+  margin-left: -30px;
+  margin-top: 6.5px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arr{
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Adjust the color as needed */
+}
+
+/* Contact section styling */
+.contact-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.contact-section .contact-info-list .contact-info {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  align-items: center;
+  text-align: center;
+}
+.contact-section .contact-info-list .contact-info i {
+  font-size: var(--font-size-m);
+}
+.contact-section .contact-form .form-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  outline: none;
+  margin-bottom: 16px;
+  font-size: var(--font-size-s);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--medium-gray-color);
+}
+.contact-section .contact-form {
+  max-width: 50%;
+}
+.contact-section .contact-form textarea.form-input {
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+.contact-section .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+.contact-section .contact-form .submit-button {
+  padding: 10px 28px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-m);
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  transition: 0.3s ease;
+}
+.contact-section .contact-form .submit-button:hover {
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.section-title{
+  color: black;
+  text-align: center;
+}
+
+.contact-info-list{
+  margin-left: 150px;
+  color: black;
+}
+
+.contact-form{
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+/* Footer section styling */
+.footer-section {
+  padding: 20px 0;
+  background: var(--dark-color);
+}
+.footer-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+  color: var(--white-color);
+  transition: 0.2s ease;
+  text-align: rights;
+}
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+  font-size: var(--font-size-l);
+}
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+  color: var(--secondary-color);
+}
+.footer-section .policy-text .separator {
+  color: #fff;
+  margin: 0 5px;
+}
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width: 1024px) {
+  .menu-section .menu-list {
+    gap: 60px;
+  }
+  .menu-section .menu-list .menu-item {
+    width: calc(100% / 3 - 60px);
+  }
+}
+  </style>
+  <body>
+  <!-- arrow -->
+ <a href="menu.html">
+  <i class="arrow left"></i> Back
+</a>
+
+    <div class="container2">
+      <h1>Lemon Lychee</h1>
+      <img src="IMG/7 - Copy.png" alt="7" class="img">
+    </div>
+
+     <!-- Size Options Section -->
+  <div class="size-options">
+    <div class="size-option">
+      <h2 class="h2-size">Size Options</h2>
+        <img src="IMG/34.png" alt="34" class="small">
+        <p class="psmall">Small<br>12 oz</p>
+    </div>
+    <div class="size-option">
+        <img src="IMG/35.png" alt="35" class="med">
+        <p class="pmed">Medium<br>16 oz</p>
+    </div>
+    <div class="size-option">
+        <img src="IMG/36.png" alt="36" class="large">
+        <p class="plarge">Large<br>20 oz</p>
+    </div>
+</div>
+  
+    <!-- Product Information Section -->
+    <div class="product-info-container">
+      <!-- Ingredients Section -->
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+ 
+          <li>LYCHEE JUICE, AGAVE SYRUP, CUP FRESH MINT LEAVES, VANILLA EXTRACT, WATER, ICE, LEMON JUICE.</li>
+          
+        </ul>
+      </div>
+  
+      <!-- Nutrition Section -->
+      <div class="nutrition">
+        <h2>Nutrition</h2>
+        <table class="nutrition-table">
+          <tr>
+            <th>Calories</th>
+            <td>150</td>
+          </tr>
+          <tr>
+            <th>Calories from Fat</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Total Fat</th>
+            <td>0 g</td>
+          </tr>
+          <tr>
+            <th>Saturated Fat</th>
+            <td>0 g</td>
+          </tr>
+          <tr>
+            <th>Trans Fat</th>
+            <td>0 g</td>
+          </tr>
+          <tr>
+            <th>Cholesterol</th>
+            <td>0 mg</td>
+          </tr>
+          <tr>
+            <th>Sodium</th>
+            <td>10 mg (1%)</td>
+          </tr>
+          <tr>
+            <th>Total Carbohydrates</th>
+            <td>30 g (10%)</td>
+          </tr>
+          <tr>
+            <th>Dietary Fiber</th>
+            <td>1 g (3%)</td>
+          </tr>
+          <tr>
+            <th>Sugars</th>
+            <td>51 g</td>
+          </tr>
+          <tr>
+            <th>Protein</th>
+            <td>25 g</td>
+            <br>
+          </tr>
+        </table>
+       
+      </div>
+    </div>
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+        <ul class="contact-info-list">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Dumlog Talisay City, Cebu</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@coffeeco.com</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>(123) 456-78909</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Saturday: 10:00 AM - 3:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Sunday: Closed</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-globe"></i>
+            <p>www.coffeeco.com</p>
+          </li>
+        </ul>
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Your name" class="form-input" required />
+          <input type="email" placeholder="Your email" class="form-input" required />
+          <textarea placeholder="Your message" class="form-input" required></textarea>
+          <button type="submit" class="button submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer section -->
+   <footer class="footer-section">
+    <div class="section-content">
+      <p class="copyright-text">© 2024 Coffee Co. All Rights Reserved</p>
+      <div class="social-link-list">
+       <a href="http://facebook.com" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+       <a href="http://instagram.com" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+       <a href="http://twitter.com" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy policy</a>
+        <span class="separator">•</span>
+        <a href="#" class="policy-link">Refund policy</a>
+      </p>
+    </div>
+  </footer>
+  </body>
+  </html>
